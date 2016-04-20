@@ -34,14 +34,14 @@
   font-weight: normal; }
 
 body {
-  font-family: "SegoeUILight", sans-serif;
+  font-family: "SegoeUI", sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1em;
   font-size: 16px;
   color: #313131; }
   body a {
-    font-family: "SegoeUILight", sans-serif;
+    font-family: "SegoeUI", sans-serif;
     line-height: 1em;
     font-size: 18px; }
 
@@ -272,7 +272,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #313131; }
+    color: #313131;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #services .content .text-holder {
     margin-bottom: 90px;
     padding: 0 50px; }
@@ -331,7 +333,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #313131; }
+    color: #313131;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #works .text-holder {
     margin-bottom: 90px;
     padding: 0 50px; }
@@ -410,7 +414,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #313131; }
+    color: #313131;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #advantages .text-holder {
     margin-bottom: 90px;
     padding: 0 50px; }
@@ -449,7 +455,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #313131; }
+    color: #313131;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #about .text-holder {
     margin-bottom: 70px;
     padding: 0 50px; }
@@ -563,7 +571,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #313131; }
+    color: #313131;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #who_we_are #slider_who_we_are_mobile {
     display: none; }
   #who_we_are .text-holder {
@@ -674,7 +684,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #fff; }
+    color: #fff;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #comment .text-holder {
     margin-bottom: 1px;
     padding: 0 50px; }
@@ -804,7 +816,9 @@ img {
     text-align: center;
     line-height: 1em;
     font-size: 60px;
-    color: #313131; }
+    color: #313131;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   #contacts .text-holder {
     margin-bottom: 80px;
     padding: 0 50px; }
@@ -817,7 +831,9 @@ img {
     #contacts .content-holder .left-holder h4 {
       margin-bottom: 35px;
       font-size: 30px;
-      line-height: 1em; }
+      line-height: 1em;
+      font-family: "SegoeUI" , sans-serif;
+      font-weight: normal; }
     #contacts .content-holder .left-holder .contacts-details li {
       margin-bottom: 25px;
       padding-bottom: 10px;
@@ -874,7 +890,9 @@ img {
     #contacts .content-holder .right-holder h4 {
       margin-bottom: 35px;
       font-size: 30px;
-      line-height: 1em; }
+      line-height: 1em;
+      font-family: "SegoeUI" , sans-serif;
+      font-weight: normal; }
     #contacts .content-holder .right-holder .contacts-form .row {
       margin-bottom: 20px; }
       #contacts .content-holder .right-holder .contacts-form .row.input > div {
@@ -901,7 +919,7 @@ img {
       width: 195px;
       height: 45px;
       color: #feffff;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 42px;
       text-align: center;
       text-transform: uppercase;
@@ -1133,6 +1151,12 @@ footer {
     transition: all 0.35s;
     font-size: 24px;
     text-align: center; }
+    #modal_form_connect .message_modal i {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 85px;
+      line-height: 1em;
+      color: #059ed1; }
     #modal_form_connect .message_modal.show {
       display: block;
       -webkit-transition: all 0.35s;
@@ -1263,7 +1287,9 @@ footer {
     margin-bottom: 30px;
     line-height: 1em;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: "SegoeUI" , sans-serif;
+    font-weight: normal; }
   .portfolio .info_portfolio .text_holder {
     padding: 0 50px; }
     .portfolio .info_portfolio .text_holder p {
