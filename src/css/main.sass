@@ -1,0 +1,2335 @@
+
+@font-face
+  font-family: "SegoeUILight"
+  src: url("../fonts/SegoeUI-Light.eot")
+  src: url("../fonts/SegoeUI-Light.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUI-Light.woff") format("woff"),url("../fonts/SegoeUI-Light.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+@font-face
+  font-family: "SegoeUI"
+  src: url("../fonts/SegoeUI.eot")
+  src: url("../fonts/SegoeUI.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUI.woff") format("woff"),url("../fonts/SegoeUI.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+
+@font-face
+  font-family: "SegoeUI-Semibold"
+  src: url("../fonts/SegoeUI-SemiBold.eot")
+  src: url("../fonts/SegoeUI-SemiBold.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUI-SemiBold.woff") format("woff"),url("../fonts/SegoeUI-SemiBold.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+@font-face
+  font-family: "MyanmarText-Bold"
+  src: url("../fonts/MyanmarText-Bold.eot")
+  src: url("../fonts/MyanmarText-Bold.eot?#iefix")format("embedded-opentype"),url("../fonts/MyanmarText-Bold.woff") format("woff"),url("../fonts/MyanmarText-Bold.svg") format("svg"),url("../fonts/MyanmarText-Bold.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+@font-face
+  font-family: "MyanmarText"
+  src: url("../fonts/MyanmarText.eot")
+  src: url("../fonts/MyanmarText.eot?#iefix")format("embedded-opentype"),url("../fonts/MyanmarText.woff") format("woff"),url("../fonts/MyanmarText.svg") format("svg"),url("../fonts/MyanmarText.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+body
+  font-family: "SegoeUILight", sans-serif
+  padding: 0
+  margin: 0
+  line-height: 1em
+  font-size: 16px
+  color: #313131
+  a
+    font-family: "SegoeUILight", sans-serif
+    line-height: 1em
+    font-size: 18px
+
+
+.img-holder
+  overflow: hidden
+  height: 100%
+img
+   max-width: 100%
+
+
+
+
+#cache
+  display: none
+
+
+.content
+  width: 940px
+  margin: auto
+
+
+.home
+  #main_slider
+    height: 670px
+    .header
+      position: absolute
+      left: 50%
+      margin-left: -470px
+      z-index: 2
+      top: 0
+
+      //.menu
+        li
+          a
+            height: 75px
+
+#preloader
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 99999
+  width: 100%
+  height: 100%
+  overflow: visible
+  background: #fff url('../img/icons/Logo.png') no-repeat center center
+  background-size: 8%
+  animation-fill-mode: both
+
+
+#main_slider
+  //height: 670px
+  position: relative
+  background: #4d4d4d
+  .header
+
+    width: 940px
+    margin: auto
+    padding-bottom: 15px
+    .logo
+      float: left
+      margin-top: 15px
+      //width: 60px
+      a
+        font-family: Corbel, sans-serif
+        color:  #ffffff
+        font-size: 48px
+        font-weight: 700
+        line-height: 36px
+        text-align: left
+        transition: all 0.35s
+        &:hover
+          text-decoration: none
+          //color:  #059ed1
+          transition: all 0.35s
+
+
+    .lang
+        display: inline-block
+        vertical-align: top
+        padding-top: 35px
+        margin-left: 20px
+
+        li
+          display: inline-block
+          vertical-align: middle
+          margin-right: 10px
+          color: #fff
+          cursor: pointer
+          a
+            color: #fff
+            font-size: 14px
+            text-transform: uppercase
+            font-family: "SegoeUI-Semibold", sans-serif
+            &:hover
+              color: #0584af
+              text-decoration: none
+          &.active
+            a
+              color: #0584af
+          &:last-child
+            margin-right: 0
+
+    .menu
+      float: right
+      #menu-icon
+        display: none
+        cursor: pointer
+        position: relative
+        z-index: 10
+        .icon-bar
+          background-color: #fff
+          display: block
+          width: 40px
+          height: 4px
+          margin-bottom: 7px
+  
+          &:last-child
+            margin-bottom: 0
+
+      ul.nav
+        display: inline-block
+        vertical-align: top
+        li
+          display: inline-block
+          vertical-align: top
+          float: left
+          margin-top: 38px
+
+          &:last-child
+            margin-right: 0
+          &.active
+            a
+              color:  #0584af
+
+          a
+            color: #fff
+            transition: all 0.35s
+            //width: 100px
+            padding: 0 13px
+            //height: 90px
+            display: block
+            text-align: center
+            box-sizing: border-box
+            font-size: 14px
+            text-transform: uppercase
+
+            font-family: "SegoeUI-Semibold", sans-serif
+
+
+            //font-size: 14px
+            //text-transform: uppercase
+            &:hover
+              //color: #059ed1
+              color:  #0584af
+              transition: all 0.35s
+              text-decoration: none
+
+
+      .lang
+        display: inline-block
+        vertical-align: top
+        padding-top: 30px
+        margin-left: 20px
+        display: none
+        li
+          display: inline-block
+          vertical-align: middle
+          margin-right: 10px
+          color: #fff
+          cursor: pointer
+          a
+            color: #fff
+            &:hover
+              color: #0584af
+              text-decoration: none
+          &.active
+            a
+              color: #0584af
+          &:last-child
+            margin-right: 0
+  .slider_main
+    height: 670px
+
+    li
+      height: 670px
+      //animation: slideInLeft 2s linear infinite
+      //transform-origin: center bottom
+
+      &.active-slide
+        .text-slider
+          .info-slider
+            .number
+
+              animation-duration: 1s
+              animation-fill-mode: both
+              animation: flipInY 0.8s
+              opacity: 1
+            .text-holder
+
+              h4
+
+                animation-duration: 1s
+                animation-fill-mode: both
+                animation: flipInX 1.5s
+                opacity: 1
+
+              .text
+
+                animation-duration: 1s
+                animation-fill-mode: both
+                animation: flipInX 1.7s
+                opacity: 1
+
+              .link_readmore
+
+                a
+
+                  animation-duration: 1s
+                  animation-fill-mode: both
+                  animation: flipInX 2s
+                  opacity: 1
+      .text-slider
+        //background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(7, 11, 14, 0.17) 16%, #2c3e50 100%)
+        background: url("../img/bg/shadow.png") repeat-x
+        width: 100%
+        height: 100%
+        .info-slider
+          padding-top: 140px
+          width: 940px
+          margin:  auto
+
+
+          .number
+            width: 80px
+            height: 90px
+            float: left
+            color: #fff
+            font-size: 48px
+            line-height: 85px
+            text-align: center
+            background-color:  rgba(5, 158, 209, 0.7)
+            opacity: 0
+            /*animation-duration: 1s
+            //animation-fill-mode: both
+            //animation: flipInY 1s
+          .text-holder
+            width: 620px
+            float: left
+            h4
+              width: 100%
+              height: 90px
+              color: #fff
+              font-size: 48px
+              line-height: 77px
+              text-align: left
+              background:  #059ed1
+              padding: 0 40px
+              text-overflow: ellipsis
+              white-space: nowrap
+              overflow: hidden
+              box-sizing: border-box
+              font-weight: normal
+              opacity: 0
+              //animation-duration: 1s
+              //animation-fill-mode: both
+              //animation: flipInX 1.5s
+
+            .text
+              width: 100%
+              height: 120px
+              text-align: left
+              background:  #fff
+              padding: 20px
+              box-sizing: border-box
+              opacity: 0
+              //animation-duration: 1s
+              //animation-fill-mode: both
+              //animation: flipInX 1.7s
+              p
+                font-size: 16px
+                line-height: 1.6em
+                text-overflow: ellipsis
+                overflow: hidden
+                height: 100%
+            .link_readmore
+
+              width: 140px
+              height: 40px
+              a
+                color: #fff
+                display: block
+                height: 40px
+                line-height: 37px
+                box-sizing: border-box
+                padding-left: 17px
+                position: relative
+                transition: all 0.35s
+                background:  #059ed1
+                opacity: 0
+                //animation-duration: 1s
+                //animation-fill-mode: both
+                //animation: flipInX 2s
+                &:hover
+                  text-decoration: none
+                  transition: all 0.35s
+                  background:  #0584af
+                &:after
+                  width: 6px
+                  height: 10px
+                  background: url("../img/icons/readmore.png") no-repeat
+                  background-size: 100%
+                  display: inline-block
+                  margin-left: 10px
+                  content: ""
+
+
+
+
+  .bx-controls
+    .bx-pager
+      width: 940px
+      margin: auto
+      left: 0
+      right: 0
+      bottom: 175px
+      .bx-pager-item
+        width: 33.3%
+        a
+          width: 100%
+          height: 50px
+          margin: 0
+          border-radius: 0
+          transition: all 0.35s
+          color: #fff
+          text-align: left
+          font-size: 20px
+          line-height: 1em
+          //padding-bottom: 25px
+          border-bottom: 5px solid rgba(255, 255, 255, 0.35)
+          background: none
+          font-family: "SegoeUI-Semibold", sans-serif
+          position: relative
+          &:after
+            position: absolute
+            content: ""
+            width: 100%
+            height: 312px
+            left: 0
+            right: 0
+            z-index: 100
+
+
+          &.active, &:hover
+            border-color: #fff
+            transition: all 0.35s
+            text-decoration: none
+
+
+
+
+#services
+  background: #daf0f7
+  padding-bottom: 60px
+  position: relative
+  .content
+
+    margin-top: -140px
+    .item-holder
+      width: 33.3%
+      float: left
+      &:nth-child(2)
+        .img-block
+          .img-holder
+            background: #0584af
+          h3
+            background: #0584af
+      &:nth-child(3)
+        .img-block
+          .img-holder
+            background: #057094
+          h3
+            background: #057094
+      .img-block
+
+        .img-holder
+          text-align: center
+          height: 140px
+          background: #059ed1
+          border-bottom: 3px solid #fff
+        h3
+          height: 80px
+          overflow: hidden
+          padding: 14px 20px
+          box-sizing: border-box
+          background: #059ed1
+          color: #fff
+          text-align: center
+          font-size: 20px
+          font-family: "SegoeUI-Semibold", sans-serif
+          line-height: 1.3em
+          text-overflow: ellipsis
+
+
+
+      .text-block
+        padding: 15px 15px 0
+        p
+          line-height: 2em
+          margin-bottom: 20px
+        a
+          color: #059ed1
+          font-family: "SegoeUI-Semibold", sans-serif
+          height: 40px
+          line-height: 37px
+          position: relative
+          transition: all 0.35s
+
+          &:hover
+            //text-decoration: none
+            transition: all 0.35s
+            //color: #057094
+          &:after
+            width: 6px
+            height: 10px
+            background: url("../img/icons/readmore2.png") no-repeat
+            background-size: 100%
+            display: inline-block
+            margin-left: 10px
+            content: ""
+
+
+#works
+
+  padding: 90px 0
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 90px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+  .text-works
+    column-width: 50%
+    column-count: 2
+    column-gap: 30px
+    p
+      line-height: 2em
+  .bx-wrapper
+      margin-bottom: 40px
+
+
+      .bx-controls-direction
+        a
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+          background-size: 45%
+          width: 50px
+          height: 50px
+          display: block
+          background-position: 50% center
+          transition: all 0.35s
+          top: 50%
+          margin-top: -25px
+          &.bx-prev
+            left: 0
+            transform: rotate(180deg)
+          &.bx-next
+            right: 0
+
+          &:hover
+            background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+            background-size: 45%
+            background-position: 50% center
+            transition: all 0.35s
+  .bx-controls
+    .bx-pager
+      display: none
+
+  .link
+    text-align: center
+    a
+      margin-top: 50px
+      display: inline-block
+      vertical-align: middle
+      text-align: center
+      text-transform: uppercase
+      color: #059ed1
+      border: 4px solid #059ed1
+      transition: all 0.35s
+      line-height: 1em
+      font-size: 14px
+      font-family: "SegoeUI-Semibold" ,sans-serif
+      letter-spacing: 1px
+      box-sizing: border-box
+      padding: 15px 25px
+      &:hover
+        transition: all 0.35s
+        background: #059ed1
+        text-decoration: none
+        color: #fff
+
+
+
+
+#advantages
+
+  padding: 90px 0 0
+  text-align: center
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 90px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .list_advantages
+    li
+      width: 33%
+      display: inline-block
+      vertical-align: top
+      margin-bottom: 60px
+      box-sizing: border-box
+      padding: 0 20px
+      .img-holder
+        height: 70px
+        text-align: center
+        margin-bottom: 40px
+      h4
+        margin-bottom: 40px
+        color:  #313030
+        font-size: 20px
+        font-weight: normal
+        font-family: "SegoeUI" , sans-serif
+        line-height: 36px
+        text-align: center
+      .text-block
+
+        color:  #313030
+        font-size: 15px
+        line-height: 2em
+        text-align: center
+
+
+
+#about
+  margin-bottom: 90px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 70px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .text-about
+    column-width: 50%
+    column-count: 2
+    column-gap: 30px
+    p
+      line-height: 2em
+
+  #slider
+    margin-bottom: 40px
+    .bx-controls
+      display: none
+
+
+#product
+  margin-bottom: 90px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 70px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .text-product
+    column-width: 50%
+    column-count: 2
+    column-gap: 30px
+    p
+      line-height: 2em
+
+  .img-holder
+    margin-bottom: 40px
+    text-align: center
+  .link
+    text-align: center
+    a
+      margin-top: 50px
+      display: inline-block
+      vertical-align: middle
+      text-align: center
+      text-transform: uppercase
+      color: #059ed1
+      border: 4px solid #059ed1
+      transition: all 0.35s
+      line-height: 1em
+      font-size: 14px
+      font-family: "SegoeUI-Semibold" ,sans-serif
+      letter-spacing: 1px
+      box-sizing: border-box
+      padding: 15px 25px
+      &:hover
+        transition: all 0.35s
+        background: #059ed1
+        text-decoration: none
+        color: #fff
+
+
+  .bx-wrapper
+    margin-bottom: 40px
+    img
+      margin: auto
+
+
+    .bx-controls-direction
+      a
+        background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+        background-size: 45%
+        width: 50px
+        height: 50px
+        display: block
+        background-position: 50% center
+        transition: all 0.35s
+        top: 50%
+        margin-top: -25px
+        &.bx-prev
+          left: 0
+          transform: rotate(180deg)
+        &.bx-next
+          right: 0
+
+        &:hover
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+          background-size: 45%
+          background-position: 50% center
+          transition: all 0.35s
+  .bx-controls
+    .bx-pager
+      display: none
+
+
+
+
+
+#who_we_are
+  //padding-top: 80px
+  padding-bottom: 100px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+  #slider_who_we_are_mobile
+    display: none
+  .text-holder
+    margin-bottom: 70px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+  #slider_who_we_are_mobile
+    .bx-wrapper
+
+      .bx-controls-direction
+        display: block
+        a
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+          background-size: 45%
+          width: 50px
+          height: 50px
+          display: block
+          background-position: 50% center
+          transition: all 0.35s
+          top: 50%
+          margin-top: -25px
+          &.bx-prev
+            left: 0
+            transform: rotate(180deg)
+          &.bx-next
+            right: 0
+
+          &:hover
+            background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+            background-size: 45%
+            background-position: 50% center
+            transition: all 0.35s
+    .bx-controls
+      .bx-pager
+        display: none
+
+
+
+  .bx-wrapper
+    padding-bottom: 100px
+    li
+      .foto-holder
+        margin-bottom: 30px
+        position: relative
+        &:hover
+          .img-holder
+
+            transition: all 0.35s
+            opacity: 0
+            &.maska
+              transition: all 0.35s
+              opacity: 1
+
+
+
+
+        .img-holder
+          width: 100%
+          transition: all 0.35s
+          opacity: 1
+          &.maska
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            opacity: 0
+            transition: all 0.35s
+
+          img
+            margin: auto
+      .info_personal
+        h4
+          margin-bottom: 20px
+          line-height: 1em
+          font-size: 30px
+          color: #313131
+          font-weight: normal
+        .text-holder
+          padding: 0
+          text-align: left
+          margin-bottom: 0
+          p
+            text-align: left
+  .bx-controls
+    .bx-controls-direction
+      display: none
+    .bx-pager
+      width: 940px
+      margin: auto
+      left: inherit
+      bottom: 0
+      right: inherit
+
+      .bx-pager-item
+        width: 25%
+        a
+          width: 100%
+          height: 40px
+          margin: 0
+          border-radius: 0
+          transition: all 0.35s
+          color: #74cbe8
+          text-align: left
+          font-size: 24px
+          line-height: 1em
+          //padding-bottom: 25px
+          border-bottom: 4px solid #74cbe8
+          background: none
+          font-family: "SegoeUI-Semibold", sans-serif
+          box-sizing: border-box
+
+
+          &.active, &:hover
+            border-color: #059ed1
+            color: #059ed1
+            transition: all 0.35s
+            text-decoration: none
+
+
+
+#comment
+  background: url("../img/bg/bg_comment.png") no-repeat
+  background-size: cover
+  padding: 50px 0
+  h3
+    margin-bottom: 20px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #fff
+
+  .text-holder
+    margin-bottom: 1px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .content
+    color: #fff
+    .link_comment
+      text-align: center
+      margin-top: 40px
+      a
+        display: inline-block
+        vertical-align: middle
+        border: 3px #ffffff solid
+        //width: 174px
+        //height: 44px
+        box-sizing: border-box
+        //display: block
+        color: #fff
+        text-decoration: none
+        margin: auto
+        text-align: center
+        line-height: 1em
+        font-size: 14px
+        font-family: "SegoeUI-Semibold" ,sans-serif
+        letter-spacing: 1px
+        text-transform: uppercase
+        padding: 15px 25px
+        transition: all 0.35s
+        &:hover
+          color: #059ed1
+          background: #fff
+          transition: all 0.35s
+    .bx-pager
+      display: none
+    .bx-wrapper
+      .bx-controls-direction
+
+        a
+          background: url("../img/icons/readmore2.png") no-repeat
+          background-size: 100%
+          width: 21px
+          height: 35px
+          display: block
+          margin-top: -17px
+          transition: all 0.35s
+          opacity: 1
+          z-index: 3
+
+          &.bx-prev
+            left: 0
+            transform: rotate(180deg)
+          &.bx-next
+            right: 0
+
+          &:hover
+            opacity: 0.8
+            transition: all 0.35s
+
+      .bx-viewport
+        position: relative
+        z-index: 2
+        li
+          text-align: center
+          .br-wrapper
+            padding-bottom: 30px
+          .br-widget
+
+            .br-current-rating
+              display: none
+            a
+              display: inline-block
+              vertical-align: middle
+              width: 19px
+              height: 19px
+              margin: 0 7px
+              background: url("../img/icons/star.png") no-repeat
+              background-size: 100%
+              cursor: default
+              &.br-active, &.br-current, &.br-selected
+                background: url("../img/icons/star_active.png") no-repeat
+                background-size: 100%
+
+
+
+
+          //.rating
+            width: 155px
+            height: 20px
+            margin:  0 auto 30px
+            //background: url("../img/icons/star.png")
+
+
+          .info_personal
+            position: relative
+            height: 60px
+            &:before
+              position: absolute
+              content: ""
+              top: 5px
+              left: 60px
+              background: url("../img/icons/portfolio.png") no-repeat
+              width: 241px
+              height: 56px
+
+            .img-holder
+              width: 60px
+              height: 60px
+              border-radius: 60px
+              display: inline-block
+              vertical-align: middle
+              margin-right: 15px
+              img
+                width: 100%
+              //margin: auto
+            .text-holder
+              display: inline-block
+              vertical-align: middle
+              text-align: left
+              padding: 0
+              h4
+                font-size: 18px
+                line-height: 1.3em
+                font-weight: normal
+                margin-bottom: 10px
+                text-overflow: ellipsis
+                white-space: nowrap
+                overflow: hidden
+                //max-width: 190px
+              .data
+                font-size: 16px
+                line-height: 1em
+
+          .comment-holder
+            clear: both
+            padding: 0 70px 20px
+            box-sizing: border-box
+            //padding-bottom: 20px
+            min-width: 130px
+            p
+
+              line-height: 2em
+
+
+
+
+
+
+#contacts
+  padding-top: 100px
+  padding-bottom: 135px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1em
+    font-size: 60px
+    color: #313131
+
+  .text-holder
+    margin-bottom: 80px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+  .content-holder
+    .left-holder
+      width: 220px
+      float: left
+      h4
+        margin-bottom: 35px
+        font-size: 30px
+        line-height: 1em
+        //font-weight: normal
+      .contacts-details
+        li
+          margin-bottom: 25px
+          padding-bottom: 10px
+          border-bottom: 1px solid #e9e6e6
+          &:last-child
+            margin-bottom: 0
+            padding-bottom: 0
+            border-bottom: 0
+          &.social
+            a
+              display: inline-block
+              vertical-align: top
+              width: 35px
+              height: 35px
+              background: url("../img/icons/social.png") no-repeat
+              margin-right: 20px
+              transition: all 0.35s
+              &:hover
+                opacity: 0.8
+                transition: all 0.35s
+              &:last-child
+                margin-right: 0
+              &.vk
+                background-position: -55px 0
+              &.google
+                background-position: top right
+          h5
+            font-size: 18px
+            line-height: 1em
+            margin-bottom: 20px
+            font-family: "SegoeUI-Semibold", sans-serif
+          p
+            font-size: 18px
+            line-height: 1em
+            color: #000
+            margin-bottom: 15px
+            &:last-child
+              margin-bottom: 0
+
+            a
+              font-size: 18px
+              line-height: 1em
+              color: #000
+              transition: all 0.35s
+              &:hover
+                color: #059ed1
+                transition: all 0.35s
+                text-decoration: none
+
+    .right-holder
+      width: 620px
+      float: right
+      h4
+        margin-bottom: 35px
+        font-size: 30px
+        line-height: 1em
+        //font-weight: normal
+      .contacts-form
+        .row
+          margin-bottom: 20px
+          &.input>div
+            width: 300px
+            margin-right: 15px
+            display: inline-block
+            vertical-align: middle
+            &:last-child
+              margin-right: 0
+
+          input,textarea
+            border: 1px solid #c5c4c4
+            box-sizing: border-box
+          .error
+            input,textarea
+              border-color: red
+          input
+            padding: 12px
+            width: 100%
+
+
+          textarea
+            width: 100%
+            height: 190px
+            padding: 12px
+
+
+        .submit
+          background:  #059ed1
+          width: 195px
+          height: 45px
+          color:  #feffff
+          font-size: 20px
+          line-height: 42px
+          text-align: center
+          text-transform: uppercase
+          margin: auto
+          cursor: pointer
+          transition: all 0.35s
+          &:hover
+            background: #0584af
+            transition: all 0.35s
+
+footer
+  background: #4d4d4d
+  padding: 35px 0
+  position: relative
+
+  .menu
+    display: inline-block
+    vertical-align: top
+    li
+      display: inline-block
+      vertical-align: top
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
+      &.active
+        a
+          color: #059ed1
+      a
+        color: #fff
+        transition: all 0.35s
+        &:hover
+            color: #059ed1
+            transition: all 0.35s
+            text-decoration: none
+
+  .copyright
+    color:  #ffffff
+    float: right
+    span
+      font-family: "SegoeUI-Semibold", sans-serif
+      color:  #059ed1
+      margin-left: 7px
+
+#modal_form
+  box-sizing: border-box
+  height: 640px
+  margin-top: -320px
+  h4
+    font-size: 36px
+    line-height: 1em
+    color: #000
+    margin-bottom: 40px
+    font-weight: normal
+  .comment-form
+    .row
+      margin-bottom: 20px
+      &.input>div
+        width: 300px
+        margin-right: 15px
+        display: inline-block
+        vertical-align: middle
+        &:last-child
+          margin-right: 0
+
+      input,textarea
+        border: 1px solid #c5c4c4
+        box-sizing: border-box
+      .error
+        input,textarea
+          border-color: red
+      input
+        padding: 12px
+        width: 100%
+
+
+      textarea
+        width: 100%
+        height: 190px
+        padding: 12px
+
+    .rating_block
+        margin-bottom: 20px
+        .title_rating
+          color: #9c9b9b
+          font-size: 18px
+          line-height: 1em
+          margin-bottom: 10px
+
+
+        .br-widget
+          .br-current-rating
+            display: none
+          a
+            display: inline-block
+            vertical-align: middle
+            width: 26px
+            height: 25px
+            margin: 0 2px
+            background: url("../img/icons/star.png") no-repeat
+            &:first-child
+              margin-left: 0
+            &.br-active, &.br-selected
+              background: url("../img/icons/star_active.png") no-repeat
+    .submit
+      background:  #059ed1
+      width: 195px
+      height: 45px
+      color:  #feffff
+      font-size: 20px
+      line-height: 42px
+      text-align: center
+      text-transform: uppercase
+      margin: auto
+      cursor: pointer
+      transition: all 0.35s
+      &:hover
+        background: #0584af
+        transition: all 0.35s
+  #modal_close
+    z-index: 10
+  .message_modal
+    position: absolute
+    top: 0
+    height: 100%
+    width: 100%
+    left: 0
+    background: #fff
+    box-sizing: border-box
+    padding-top: 250px
+    display: none
+    transition: all 0.35s
+    font-size: 24px
+    text-align: center
+    &.show
+      display: block
+      transition: all 0.35s
+
+
+
+#modal_form_connect
+  box-sizing: border-box
+  h4
+    font-size: 30px
+    line-height: 1em
+    color: #059ed1
+    margin-bottom: 40px
+    font-family: "SegoeUI-Semibold" , sans-serif
+    text-transform: uppercase
+  .comment-form
+    .row
+      margin-bottom: 20px
+      &.input>div
+        width: 300px
+        margin-right: 15px
+        display: inline-block
+        vertical-align: middle
+        &:last-child
+          margin-right: 0
+
+      input,textarea
+        border: 1px solid #c5c4c4
+        box-sizing: border-box
+      .error
+        input,textarea
+          border-color: red
+      input
+        padding: 12px
+        width: 100%
+
+
+      textarea
+        width: 100%
+        height: 190px
+        padding: 12px
+
+    .rating_block
+      margin-bottom: 20px
+      .title_rating
+        color: #9c9b9b
+        font-size: 18px
+        line-height: 1em
+        margin-bottom: 10px
+
+
+      .br-widget
+        .br-current-rating
+          display: none
+        a
+          display: inline-block
+          vertical-align: middle
+          width: 26px
+          height: 25px
+          margin: 0 2px
+          background: url("../img/icons/star.png") no-repeat
+          &:first-child
+            margin-left: 0
+          &.br-active, &.br-selected
+            background: url("../img/icons/star_active.png") no-repeat
+    .submit
+      background:  #059ed1
+      width: 195px
+      height: 45px
+      color:  #feffff
+      font-size: 20px
+      line-height: 42px
+      text-align: center
+      text-transform: uppercase
+      margin: auto
+      cursor: pointer
+      transition: all 0.35s
+      &:hover
+        background: #0584af
+        transition: all 0.35s
+  #modal_close
+    z-index: 10
+  .message_modal
+    position: absolute
+    top: 0
+    height: 100%
+    width: 100%
+    left: 0
+    background: #fff
+    box-sizing: border-box
+    padding-top: 250px
+    display: none
+    transition: all 0.35s
+    font-size: 24px
+    text-align: center
+    &.show
+      display: block
+      transition: all 0.35s
+
+#service
+  padding-top: 80px
+  padding-bottom: 110px
+
+  h3
+    margin-bottom: 30px
+    text-align: center
+    line-height: 1.3em
+    font-size: 48px
+    color: #313131
+    font-weight: normal
+
+  .text-holder
+    margin-bottom: 60px
+    padding: 0 50px
+    p
+      line-height: 2em
+      text-align: center
+
+  .content-holder
+    .img-holder
+      width: 100%
+      text-align: center
+      margin-bottom: 40px
+      img
+        width: 100%
+    p
+      line-height: 2em
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+
+
+#sub_services
+  background: #edf9fd
+  padding: 50px 0
+
+  h3
+    margin-bottom: 20px
+    line-height: 1.5em
+    font-size: 48px
+    color: #313131
+    font-weight: normal
+
+  .text-holder
+    margin-bottom: 60px
+
+    p
+      line-height: 2em
+
+
+  .content-holder
+    ul
+      li
+        display: inline-block
+        vertical-align: top
+        width: 49%
+        margin-bottom: 20px
+        padding-right: 20px
+        box-sizing: border-box
+        .name-holder
+          position: relative
+          //.number
+            background: #059ed1
+            width: 40px
+            height: 40px
+            display: inline-block
+            vertical-align: middle
+            color: #fff
+            text-align: center
+            line-height: 35px
+            font-size: 21px
+            margin-right: 15px
+            position: absolute
+            top: 0
+            left: 0
+          .name
+            color: #000
+            font-size: 20px
+            display: inline-block
+            vertical-align: middle
+            text-overflow: ellipsis
+            white-space: nowrap
+            line-height: 35px
+            height: 40px
+            width: 100%
+            overflow: hidden
+            padding-left: 20px
+            box-sizing: border-box
+            position: relative
+            &:before 
+              position: absolute
+              top: 50%
+              left: 0
+              border-radius: 8px
+              width: 8px
+              height: 8px
+              background: #059ed1
+              margin-top: -4px
+              content: ""
+
+        .description
+          p
+            line-height: 1.5em
+            color: #313131
+
+
+
+
+
+.portfolio
+  .text-header
+    padding: 250px 0 150px
+    .text-holder
+      width: 940px
+      margin: auto
+      text-align: center
+      h4
+        color:  #ffffff
+        font-size: 40px
+        font-weight: normal
+        line-height: 1em
+        font-family: "MyanmarText-Bold", sans-serif
+        text-transform: uppercase
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.41)
+        margin-bottom: 25px
+        &:first-letter
+          font-size: 55px
+        span
+          display: inline-block
+          vertical-align: bottom
+          margin-left: 5px
+          font-size: 55px
+          color: #059ed1
+          text-transform: uppercase
+      .text
+        color:  #ffffff
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.3em
+        text-align: center
+        text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.39)
+        text-transform: uppercase
+        font-family: "MyanmarText", sans-serif
+        &:first-letter
+          font-size: 24px
+
+  .info_portfolio
+    padding: 50px 0
+    width: 940px
+    margin: auto
+    text-align: center
+    h1
+
+      color:  #313030
+      font-size: 60px
+      margin-bottom: 30px
+      line-height: 1em
+      text-align: center
+      letter-spacing: 2px
+
+    .text_holder
+      padding: 0 50px
+      p
+        line-height: 2em
+  .portfolio_list
+    .item
+      &:nth-child(2n+1)
+        padding: 100px 0
+        .img-holder
+          float: left
+          margin-right: 70px
+
+      &:nth-child(2n)
+        background: #f2f2f2
+        padding: 40px 0
+        .img-holder
+          float: right
+          margin-left: 70px
+      .wrap
+        width: 940px
+        margin: auto
+        .description
+          margin-bottom: 80px
+        .text_holder
+          overflow: hidden
+          h3
+            font-family: "SegoeUI-Semibold" , sans-serif
+            color:  #059ed1
+            font-size: 30px
+            //font-weight: normal
+            line-height: 1em
+            text-align: left
+            margin-bottom: 30px
+          p
+            font-size: 14px
+            color: #3b3b3b
+            line-height: 2em
+            font-family: "SegoeUI" , sans-serif
+        .list_characteristics
+          margin-bottom: 60px
+          >div
+            margin-bottom: 40px
+            display: inline-block
+            vertical-align: top
+            width: 49%
+            box-sizing: border-box
+
+            &:nth-child(2n+1)
+              padding-right: 10px
+            &:nth-child(2n)
+              padding-left: 10px
+            h4
+              padding-left: 60px
+              color:  #313030
+              font-size: 30px
+              font-weight: normal
+              line-height: 45px
+              text-align: left
+              margin-bottom: 40px
+              background: url("../img/icons/design_icons.png") no-repeat top left
+            &.design
+              h4
+                background: url("../img/icons/design_icons.png") no-repeat top left
+
+            &.content
+              h4
+                background: url("../img/icons/content_icons.png") no-repeat top left
+            &.creativity
+              h4
+                background: url("../img/icons/creativity_icons.png") no-repeat top left
+            &.usability
+              h4
+                background: url("../img/icons/usability_icons.png") no-repeat top left
+        .feedback
+          .link
+            width: 195px
+            position: relative
+            color: #fff
+            text-align: center
+            text-transform: uppercase
+            font-size: 18px
+            font-family: "SegoeUI" , sans-serif
+            background: #059ed1
+            display: block
+            margin: auto
+            line-height: 50px
+            transition: all 0.35s
+            cursor: pointer
+
+            &:hover
+              transition: all 0.5s
+              background: #0584af
+              text-decoration: none
+              &:after
+                border-top: 10px solid #0584af
+                transition: all 0.35s
+            &:after
+                content: ''
+                position: absolute
+                bottom: -10px
+                left: 50%
+                margin-left: -10px
+                width: 0
+                height: 0
+                border-left: 10px solid transparent
+                border-right: 10px solid transparent
+                border-top: 10px solid #059ed1
+                transition: all 0.35s
+
+          .list_feedback
+            display: none
+            margin-top: 30px
+            .item_feedback
+              margin-bottom: 30px
+              &:last-child
+                margin-bottom: 0
+              .name
+                  color:  #222222
+                  font-size: 18px
+                  font-style: italic
+                  line-height: 1em
+                  font-family: "SegoeUI" , sans-serif
+                  margin-bottom: 5px
+              .data
+                margin-bottom: 20px
+                color:  #666565
+                font-size: 14px
+                font-style: italic
+              .comment
+                margin-bottom: 25px
+                color:  #666565
+                font-size: 14px
+                font-style: italic
+                line-height: 2em
+
+
+              .br-widget
+                text-align: center
+
+                .br-current-rating
+                  display: none
+                a
+                  display: inline-block
+                  vertical-align: middle
+                  width: 15px
+                  height: 15px
+                  margin: 0 5px
+                  background: url("../img/icons/star.png") no-repeat
+                  background-size: 100%
+                  cursor: default
+                  &.br-active, &.br-current, &.br-selected
+                    background: url("../img/icons/star_active.png") no-repeat
+                    background-size: 100%
+
+
+#connect_us
+  position: fixed
+  bottom: 0
+  width: 940px
+  left: 50%
+  margin-left: -470px
+  a
+    display: block
+    line-height: 50px
+    text-align: center
+    text-transform: uppercase
+    background: #059ed1
+    color: #fff
+    font-size: 18px
+    font-family: "SegoeUI-Semibold" , sans-serif
+    transition: all 0.35s
+    &:hover
+      transition: all 0.35s
+      background: #0584af
+      text-decoration: none
+    &:first-letter
+      font-size: 24px
+
+.scrollTop
+  display: none
+  z-index: 9999
+  position: fixed
+  bottom: 5%
+  right: 2%
+  width: 19px
+  height: 43px
+  background: url("../img/icons/up.png") no-repeat
+  &:hover
+    background-position: top right
+
+.page_service
+  #works
+    padding-bottom: 40px
+    padding-top: 30px
+  #contacts
+    padding-top: 30px
+
+@media screen and (max-width: 1023px)
+  .home
+    #main_slider
+      .header
+        margin-left: -450px
+
+
+
+
+  #main_slider
+    .bx-controls
+      .bx-pager
+        width: 900px
+    .header
+      width: 900px
+      padding-bottom: 0
+
+    .slider_main
+      li
+        .text-slider
+          .info-slider
+            width: 900px
+  .content
+      width: 900px
+
+
+  #who_we_are .bx-controls .bx-pager
+    width: 900px
+
+  #contacts
+    padding: 70px 0
+    .text-holder
+      margin-bottom: 70px
+
+  .portfolio .text-header .text-holder
+    width: 900px
+    h4
+      font-size: 38px
+  #connect_us
+    width: 900px
+    margin-left: -450px
+  .portfolio .info_portfolio
+    width: 900px
+  .portfolio .portfolio_list .item .wrap
+    width: 900px
+  .portfolio .portfolio_list .item .img-holder
+
+    width: 50%
+
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 25px
+
+@media screen and (max-width: 959px)
+  body
+    font-size: 16px
+  #main_slider .header .menu ul.nav li
+    margin-top: 10px
+  #main_slider
+    .bx-controls
+      .bx-pager
+        width: 100%
+        padding: 20px
+        box-sizing: border-box
+        bottom: 140px
+    .header
+      width: 100%
+      //padding: 20px
+      box-sizing: border-box
+      .logo
+        margin-top: 0
+        //position: absolute
+        //top: 15px
+        //left: 20px
+        position: relative
+        z-index: 102
+        padding: 15px 0
+        margin-left: 20px
+        a
+          font-size: 28px
+      .menu
+        width: 100%
+        position: absolute
+        top: 20px
+        right: 0
+        //position: relative
+        z-index: 101
+        background: #4d4d4d
+
+        #menu-icon
+          display: block
+          float: right
+          margin-right: 20px
+        .mobile-menu
+          display: none
+          padding: 50px 0 20px
+          width: 100%
+        ul
+          clear: both
+          display: block
+          margin-bottom: 20px
+        .lang
+          display: block
+          margin: auto
+          padding: 0
+          text-align: center
+        ul.nav
+          display: block
+          li
+            display: block
+            //margin-bottom: 15px
+            float: none
+            a
+              color: #fff
+              width: 100%
+              height: auto
+              padding: 10px
+              font-size: 16px
+              text-transform: uppercase
+
+
+    .slider_main
+      li
+        .text-slider
+          .info-slider
+            width: 100%
+            padding: 90px 20px 0
+            box-sizing: border-box
+  .content
+      width: 100%
+      padding: 0 20px
+      box-sizing: border-box
+
+
+  #who_we_are .bx-controls .bx-pager
+      width: 100%
+
+
+
+
+  #service
+    padding: 30px 0
+    .content
+      h3
+        font-size: 36px
+        margin-bottom: 20px
+      .text-holder
+        margin-bottom: 30px
+        padding: 0
+        p
+          line-height: 1.5em
+      .img-holder
+        margin-bottom: 30px
+      .content-holder p
+        margin-bottom: 30px
+  #sub_services
+    padding: 30px 0 10px
+    .content
+      h3
+        line-height: 1em
+        font-size: 28px
+      .text-holder
+        margin-bottom: 30px
+
+      .content-holder ul li
+        display: block
+        width: auto
+        padding-right: 0
+        .name-holder .name
+          font-size: 18px
+
+
+
+  #contacts
+    padding: 30px 0
+    .content
+      h3
+        font-size: 45px
+        line-height: 1em
+
+      .text-holder
+        margin-bottom: 30px
+        padding: 0
+        p
+          line-height: 1.5em
+
+      .content-holder
+        .left-holder
+          width: 100%
+          float: none
+          margin-bottom: 40px
+          text-align: center
+          h4
+            margin-bottom: 30px
+            font-size: 20px
+          .contacts-details li
+            margin-bottom: 20px
+            padding-bottom: 0
+            border-bottom: 0
+            h5
+              margin-bottom: 10px
+            p
+              font-size: 16px
+              a
+                font-size: 16px
+
+
+
+
+        .right-holder
+          width: 100%
+          float: none
+          h4
+
+            margin-bottom: 30px
+            font-size: 20px
+
+
+          .contacts-form
+
+            .row.input > div
+              width: 100%
+              margin-right: 0
+              display: block
+              margin-bottom: 20px
+
+
+
+
+  footer
+    .content
+      .menu
+        display: none
+      .copyright
+        float: none
+        text-align: center
+
+
+  #about
+    margin-bottom: 50px
+    .content
+      h3
+        font-size: 45px
+      .text-holder
+        margin-bottom: 40px
+        padding: 0
+      .text-about
+          //column-count: 1
+          //p
+            margin-bottom: 30px
+
+
+
+  #works
+    padding: 50px 0
+    .content
+      h3
+        font-size: 45px
+      .text-holder
+        margin-bottom: 40px
+        padding: 0
+
+
+  #who_we_are
+    padding: 0 0 50px
+    .content
+      h3
+        font-size: 45px
+      //.text-holder
+        margin-bottom: 40px
+        padding: 0
+
+  #product
+    margin-bottom: 50px
+    h3
+      font-size: 45px
+  #comment
+    h3
+      font-size: 45px
+
+
+  .home #main_slider
+    height: 480px
+    li
+      //height: 480px
+    .slider_main li
+        .text-slider .info-slider
+          .text-holder
+            h4
+              line-height: 45px
+              height: 50px
+              font-size: 36px
+            .text
+              font-size: 14px
+              padding: 12px
+              height: auto
+          .number
+              width: 55px
+              height: 50px
+              font-size: 36px
+              line-height: 50px
+
+
+    .header
+      margin-left: 0
+      left: 0
+      width: 100%
+      background: #4d4d4d
+  #main_slider .header
+    background: #4d4d4d
+  #main_slider .header .logo
+    width: 60px
+    a
+      display: block
+
+  .portfolio .text-header .text-holder
+    width: 100%
+    padding: 0 20px
+    box-sizing: border-box
+
+
+  #main_slider .header >.lang
+    display: none
+
+  .portfolio .info_portfolio .text_holder
+    padding: 0
+
+    .portfolio .text-header .text-holder
+      width: 900px
+      h4
+        font-size: 38px
+
+
+  #connect_us
+    width: calc( 100% - 40px)
+    //padding: 0 20px
+    //box-sizing: border-box
+    margin-left: 0
+    left: 20px
+  .portfolio .info_portfolio
+    width: 100%
+    padding: 30px 20px
+    box-sizing: border-box
+  .portfolio .portfolio_list .item .wrap
+    width: 100%
+    padding: 0 20px
+    box-sizing: border-box
+  .portfolio .portfolio_list .item:nth-child(2n+1)
+    padding: 30px 0
+
+  .portfolio .text-header .text-holder h4
+    line-height: 1.3em
+    font-size: 36px
+
+  #works .content h3,
+  #about .content h3,
+  #product h3,
+  #who_we_are .content h3,
+  #comment h3,
+  #contacts .content h3
+    font-size: 36px
+
+
+  #advantages
+    padding-top: 40px
+    h3
+      font-size: 36px
+    .list_advantages li
+      margin-bottom: 30px
+      .img-holder
+        margin-bottom: 20px
+      h4
+        margin-bottom: 15px
+    .text-holder
+      margin-bottom: 40px
+
+
+
+
+@media screen and (max-width: 900px)
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 15px
+
+  #services .content .item-holder .img-block h3
+    font-size: 18px
+
+  .portfolio .text-header
+    padding: 150px 0 100px
+@media screen and (max-width: 870px)
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 0
+
+
+
+@media screen and (max-width: 850px)
+  #who_we_are .bx-wrapper
+    padding-bottom: 70px
+    li .info_personal h4
+      font-size: 24px
+
+  //#comment .content .bx-wrapper .bx-viewport li .info_personal
+    padding-bottom: 65px
+    &:before
+      top: inherit
+      bottom: 0
+      left: 50%
+      margin-left: -121px
+      background: url("../img/icons/portfolio_mobile.png") no-repeat
+      width: 243px
+      height: 58px
+  #advantages .list_advantages li
+    width: 49%
+
+@media screen and (max-width: 830px)
+  #comment
+    .content
+      .bx-wrapper
+        .bx-viewport
+          li
+            .info_personal
+              &:before
+                left: 25px
+
+  #services .content .item-holder .img-block h3
+      font-size: 17px
+
+  #comment .content .bx-wrapper .bx-viewport li .info_personal
+      padding-bottom: 65px
+      &:before
+        top: inherit
+        bottom: 0
+        left: 50%
+        margin-left: -121px
+        background: url("../img/icons/portfolio_mobile.png") no-repeat
+        width: 243px
+        height: 58px
+
+
+
+@media screen and (max-width: 800px)
+
+  #product .text-holder,
+  #who_we_are .text-holder
+    padding: 0
+    margin-bottom: 40px
+
+  #modal_form, #modal_form_connect
+   width: calc( 100% - 40px )
+
+   margin-left: 0
+   left: 20px
+   padding: 20px
+   margin-top: -230px
+   height: 460px
+   overflow: auto
+   h4
+     font-size: 24px
+     margin-bottom: 30px
+   .comment-form
+      .row
+        input
+          padding: 7px 10px
+        textarea
+          height: 120px
+      .row.input
+       margin-bottom: 0
+       > div
+         width: 100%
+         display: block
+         margin-bottom: 20px
+
+
+    
+
+  #main_slider
+    .slider_main li .text-slider .info-slider
+      padding: 140px 20px 0
+    .bx-controls .bx-pager
+
+      bottom: 20px
+      .bx-pager-item a:after
+        display: none
+  #services
+    padding-top: 50px
+    .content
+      margin-top: 0
+      .item-holder
+        display: block
+        width: 100%
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+
+
+  .portfolio .info_portfolio h1
+    font-size: 36px
+  .portfolio .portfolio_list .item .wrap .text_holder h3,
+  .portfolio .portfolio_list .item .wrap .list_characteristics > div h4
+    font-size: 24px
+
+
+  .portfolio .portfolio_list .item .img-holder
+    width: 100%
+    float: none!important
+    margin: 0 auto 30px!important
+    text-align: center
+  .portfolio .portfolio_list .item .wrap .description
+    margin-bottom: 40px
+  .portfolio .portfolio_list .item .wrap .list_characteristics > div h4
+    margin-bottom: 20px
+  .portfolio .portfolio_list .item .wrap .list_characteristics
+    margin-bottom: 40px
+  #advantages .text-holder
+    padding: 0
+@media screen and (max-width: 720px)
+  #main_slider .slider_main li .text-slider .info-slider .text-holder
+    width: 500px
+
+
+@media screen and (max-width: 600px)
+  body
+    min-width: 320px
+
+  #works .content h3,
+  #about .content h3,
+  #product h3,
+  #who_we_are .content h3,
+  #comment h3,
+  #contacts .content h3
+    font-size: 24px
+
+  #works .text-works, #about .text-about,
+  #product .text-product
+    column-count: 1
+    p
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+
+
+  #comment .content .bx-wrapper .bx-viewport li .comment-holder
+    padding: 0 20px
+  #comment .content .bx-wrapper .bx-controls-direction a.bx-next
+    right: -10px
+  #comment .content .bx-wrapper .bx-controls-direction a.bx-prev
+    left: -10px
+
+  #who_we_are
+    #slider_who_we_are
+      display: none
+    #slider_who_we_are_mobile
+      display: block
+    .bx-wrapper
+      padding-bottom: 0
+      li .info_personal h4
+        text-align: center
+
+  .home #main_slider .slider_main li .text-slider .info-slider
+
+    .number
+      display: none
+    .text-holder
+      width: 100%
+
+
+  .portfolio .text-header .text-holder h4
+    font-size: 24px
+    &:first-letter
+        font-size: 30px
+
+    span
+      font-size: 30px
+  .portfolio .text-header .text-holder .text
+    font-size: 16px
+  .portfolio .text-header
+    padding: 100px 0 70px
+  .portfolio .portfolio_list .item .wrap .list_characteristics > div
+    display: block
+    width: 100%
+    padding: 0!important
+
+  #advantages .list_advantages li
+    width: 100%
+
+
+@media screen and (max-width: 430px)
+  .home #main_slider .slider_main li .text-slider .info-slider
+    padding-top: 100px
+
+@media screen and (max-width: 410px)
+  .home #main_slider .slider_main li .text-slider .info-slider
+
+    .text-holder
+      h4
+        line-height: 45px
+        height: 50px
+        font-size: 24px
