@@ -67,7 +67,7 @@ img
 
 .home
   #main_slider
-    height: 670px
+    height: 640px
     .header
       position: absolute
       left: 50%
@@ -225,14 +225,18 @@ img
           &:last-child
             margin-right: 0
   .slider_main
-    height: 670px
+    height: 640px
+
 
     li
-      height: 670px
+      height: 640px
+      .text-slider
+        background: rgba(0, 0, 0, 0.5)
+        height: 100%
       //animation: slideInLeft 2s linear infinite
       //transform-origin: center bottom
 
-      &.active-slide
+      //&.active-slide
         .text-slider
           .info-slider
             .number
@@ -265,105 +269,74 @@ img
                   animation-fill-mode: both
                   animation: flipInX 2s
                   opacity: 1
-      .text-slider
-        //background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(7, 11, 14, 0.17) 16%, #2c3e50 100%)
-        background: url("../img/bg/shadow.png") repeat-x
-        width: 100%
-        height: 100%
-        .info-slider
-          padding-top: 140px
-          width: 940px
-          margin:  auto
-
-
-          .number
-            width: 80px
-            height: 90px
-            float: left
+      .text-holder
+        width: 940px
+        margin: auto
+        text-align: center
+        padding: 280px 0 0
+        h4
+          color:  #ffffff
+          font-size: 40px
+          font-weight: normal
+          line-height: 1em
+          font-family: "MyanmarText-Bold", sans-serif
+          text-transform: uppercase
+          text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.41)
+          margin-bottom: 25px
+          &:first-letter
+            font-size: 55px
+          span
+            display: inline-block
+            vertical-align: bottom
+            margin-left: 5px
+            font-size: 55px
+            color: #059ed1
+            text-transform: uppercase
+        .text
+          color:  #ffffff
+          font-size: 18px
+          font-weight: 400
+          line-height: 1.3em
+          text-align: center
+          text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.39)
+          text-transform: uppercase
+          font-family: "MyanmarText", sans-serif
+          margin-bottom: 100px
+          &:first-letter
+            font-size: 24px
+        .link_services
+          display: block
+          text-align: center
+          a
+            display: inline-block
+            vertical-align: top
             color: #fff
-            font-size: 48px
-            line-height: 85px
+            font-family: "SegoeUI-Semibold" , sans-serif
+            font-size: 14px
+            line-height: 1em
+            padding: 15px 15px 25px
             text-align: center
-            background-color:  rgba(5, 158, 209, 0.7)
-            opacity: 0
-            /*animation-duration: 1s
-            //animation-fill-mode: both
-            //animation: flipInY 1s
-          .text-holder
-            width: 620px
-            float: left
-            h4
-              width: 100%
-              height: 90px
-              color: #fff
-              font-size: 48px
-              line-height: 77px
-              text-align: left
-              background:  #059ed1
-              padding: 0 40px
-              text-overflow: ellipsis
-              white-space: nowrap
-              overflow: hidden
-              box-sizing: border-box
-              font-weight: normal
-              opacity: 0
-              //animation-duration: 1s
-              //animation-fill-mode: both
-              //animation: flipInX 1.5s
+            text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.41)
+            border: 2px solid #fff
+            background: url("../img/icons/link_services.png") no-repeat
+            background-position: center 85%
+            transition: all 0.35s
+            &:hover
+              transition: all 0.35s
+              background: #059ed1 url("../img/icons/link_services.png") no-repeat
+              background-position: center 85%
+              border-color: #059ed1
+              text-decoration: none
 
-            .text
-              width: 100%
-              height: 120px
-              text-align: left
-              background:  #fff
-              padding: 20px
-              box-sizing: border-box
-              opacity: 0
-              //animation-duration: 1s
-              //animation-fill-mode: both
-              //animation: flipInX 1.7s
-              p
-                font-size: 16px
-                line-height: 1.6em
-                text-overflow: ellipsis
-                overflow: hidden
-                height: 100%
-            .link_readmore
 
-              width: 140px
-              height: 40px
-              a
-                color: #fff
-                display: block
-                height: 40px
-                line-height: 37px
-                box-sizing: border-box
-                padding-left: 17px
-                position: relative
-                transition: all 0.35s
-                background:  #059ed1
-                opacity: 0
-                //animation-duration: 1s
-                //animation-fill-mode: both
-                //animation: flipInX 2s
-                &:hover
-                  text-decoration: none
-                  transition: all 0.35s
-                  background:  #0584af
-                &:after
-                  width: 6px
-                  height: 10px
-                  background: url("../img/icons/readmore.png") no-repeat
-                  background-size: 100%
-                  display: inline-block
-                  margin-left: 10px
-                  content: ""
+
 
 
 
 
   .bx-controls
-    .bx-pager
+    display: none
+    //.bx-pager
       width: 940px
       margin: auto
       left: 0
@@ -386,14 +359,7 @@ img
           background: none
           font-family: "SegoeUI-Semibold", sans-serif
           position: relative
-          &:after
-            position: absolute
-            content: ""
-            width: 100%
-            height: 312px
-            left: 0
-            right: 0
-            z-index: 100
+
 
 
           &.active, &:hover
@@ -405,46 +371,50 @@ img
 
 
 #services
-  background: #daf0f7
+  //background: #daf0f7
+  padding-top: 50px
   padding-bottom: 60px
   position: relative
   .content
 
-    margin-top: -140px
+    h3
+      margin-bottom: 30px
+      text-align: center
+      line-height: 1em
+      font-size: 60px
+      color: #313131
+
+    .text-holder
+      margin-bottom: 90px
+      padding: 0 50px
+      p
+        line-height: 2em
+        text-align: center
     .item-holder
       width: 33.3%
       float: left
-      &:nth-child(2)
-        .img-block
-          .img-holder
-            background: #0584af
-          h3
-            background: #0584af
-      &:nth-child(3)
-        .img-block
-          .img-holder
-            background: #057094
-          h3
-            background: #057094
+
       .img-block
 
         .img-holder
           text-align: center
-          height: 140px
-          background: #059ed1
-          border-bottom: 3px solid #fff
-        h3
           height: 80px
+          margin-bottom: 30px
+
+        h3
+          min-height: 52px
           overflow: hidden
-          padding: 14px 20px
+          padding: 0 20px
           box-sizing: border-box
-          background: #059ed1
-          color: #fff
+
+          color: #363636
           text-align: center
           font-size: 20px
-          font-family: "SegoeUI-Semibold", sans-serif
+          font-family: "SegoeUI", sans-serif
           line-height: 1.3em
           text-overflow: ellipsis
+          margin-bottom: 20px
+          font-weight: normal
 
 
 
@@ -768,7 +738,32 @@ img
 
 
   .bx-wrapper
-    padding-bottom: 100px
+    //padding-bottom: 100px
+
+    .bx-controls-direction
+      a
+        background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.8)
+        background-size: 45%
+        width: 50px
+        height: 50px
+        display: block
+        background-position: 50% center
+        transition: all 0.35s
+        top: 50%
+        margin-top: -25px
+        &.bx-prev
+          left: -75px
+          transform: rotate(180deg)
+        &.bx-next
+          right: -75px
+
+        &:hover
+          background: url("../img/icons/readmore.png") no-repeat rgba(163, 163, 163, 0.9)
+          background-size: 45%
+          background-position: 50% center
+          transition: all 0.35s
+
+
     li
       .foto-holder
         margin-bottom: 30px
@@ -813,7 +808,12 @@ img
           margin-bottom: 0
           p
             text-align: left
+
   .bx-controls
+    .bx-pager
+      display: none
+
+  //.bx-controls
     .bx-controls-direction
       display: none
     .bx-pager
@@ -1166,7 +1166,8 @@ footer
 
   .copyright
     color:  #ffffff
-    float: right
+    text-align: center
+    //float: right
     span
       font-family: "SegoeUI-Semibold", sans-serif
       color:  #059ed1
@@ -1718,6 +1719,12 @@ footer
     padding-top: 30px
   #contacts
     padding-top: 30px
+@media screen and (max-width: 1100px)
+  #who_we_are .bx-wrapper .bx-controls-direction a.bx-prev
+    left: 0
+  #who_we_are .bx-wrapper .bx-controls-direction a.bx-next
+    right: 0
+
 
 @media screen and (max-width: 1023px)
   .home
@@ -1736,7 +1743,7 @@ footer
       width: 900px
       padding-bottom: 0
 
-    .slider_main
+    //.slider_main
       li
         .text-slider
           .info-slider
@@ -1776,13 +1783,34 @@ footer
             .info_personal
               &:before
                 left: 25px
+  #main_slider .slider_main li .text-holder
+    width: 900px
+    h4
+      font-size: 38px
+      &:first-letter
+        font-size: 50px
+      span
+        font-size: 50px
 
 @media screen and (max-width: 959px)
   body
     font-size: 16px
   #main_slider .header .menu ul.nav li
     margin-top: 10px
+  #main_slider .slider_main li .text-holder
+
+    width: 100%
+    padding: 100px 20px 0
+    box-sizing: border-box
+    .text
+      margin-bottom: 50px
+
+
   #main_slider
+    .slider_main
+      height: 480px
+      li
+        height: 480px
     .bx-controls
       .bx-pager
         width: 100%
@@ -1896,7 +1924,19 @@ footer
           font-size: 18px
 
 
+  #services
 
+    padding: 30px 0
+    .content
+      h3
+        font-size: 45px
+        line-height: 1em
+
+      .text-holder
+        margin-bottom: 30px
+        padding: 0
+        p
+          line-height: 1.5em
   #contacts
     padding: 30px 0
     .content
@@ -2012,15 +2052,15 @@ footer
     .slider_main li
         .text-slider .info-slider
           .text-holder
-            h4
+            //h4
               line-height: 45px
               height: 50px
               font-size: 36px
             .text
               font-size: 14px
-              padding: 12px
+              //padding: 12px
               height: auto
-          .number
+          //.number
               width: 55px
               height: 50px
               font-size: 36px
@@ -2118,6 +2158,23 @@ footer
 
   .portfolio .text-header
     padding: 150px 0 100px
+
+
+  #main_slider .slider_main li .text-holder
+
+    h4
+      font-size: 28px
+      &:first-letter
+        font-size: 36px
+      span
+        font-size: 36px
+
+@media screen and (max-width: 800px)
+
+
+  #services .content .item-holder .img-block h3
+    min-height: inherit
+
 @media screen and (max-width: 870px)
   #comment
     .content
@@ -2251,9 +2308,10 @@ footer
   #advantages .text-holder
     padding: 0
 @media screen and (max-width: 720px)
-  #main_slider .slider_main li .text-slider .info-slider .text-holder
+  //#main_slider .slider_main li .text-slider .info-slider .text-holder
     width: 500px
-
+  #main_slider .slider_main li .text-slider .info-slider
+    padding-top: 70px
 
 @media screen and (max-width: 600px)
   body
@@ -2321,15 +2379,23 @@ footer
     width: 100%
 
 
-@media screen and (max-width: 430px)
+//@media screen and (max-width: 430px)
   .home #main_slider .slider_main li .text-slider .info-slider
     padding-top: 100px
 
-@media screen and (max-width: 410px)
+//@media screen and (max-width: 410px)
   .home #main_slider .slider_main li .text-slider .info-slider
 
     .text-holder
       h4
-        line-height: 45px
-        height: 50px
+        line-height: 1.3em
+        //height: 50px
         font-size: 24px
+@media screen and (max-width: 400px)
+  #main_slider .slider_main li .text-holder h4
+    line-height: 1.3em
+    margin-bottom: 15px
+  #main_slider .slider_main li .text-holder
+    padding-top: 50px
+  #main_slider .slider_main li .text-holder .text
+    margin-bottom: 30px
