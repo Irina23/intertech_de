@@ -161,6 +161,10 @@ jQuery(document).ready(function() {
         //jQuery(".menu").toggleClass("active")
     });
 
+    /*jQuery(".mobile-menu a").on("click", function(){
+        jQuery(this).closest(".mobile-menu").slideToggle();
+
+    });*/
     jQuery(".feedback .link").on("click", function(){
         jQuery(this).next().slideToggle();
         //jQuery(this).toggleClass("active");
@@ -197,6 +201,31 @@ jQuery(document).ready(function($){
     }
     $(window).scroll( function(){ show_scrollTop(); } );
     show_scrollTop();
+
+
+
+    //scroll
+    (function () {
+
+        var $mainNavigation = $(".header");
+        $mainNavigation.status = 0;
+
+
+        $(document).on('scroll', function () {
+
+            var top = $(this).scrollTop();
+            if (top > 20 && $mainNavigation.status !== 2) {
+                $mainNavigation.addClass("background");
+                $mainNavigation.status = 2;
+            } else if (top < 20 && $mainNavigation.status !== 1) {
+                $mainNavigation.removeClass("background");
+                $mainNavigation.status = 1;
+            }
+
+
+        });
+
+    })();
 
 });
 
