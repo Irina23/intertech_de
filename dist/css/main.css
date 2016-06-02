@@ -484,8 +484,20 @@ img {
       line-height: 2em; }
   #about #slider {
     margin-bottom: 40px; }
-    #about #slider .bx-controls {
+    #about #slider .bx-controls-direction {
       display: none; }
+    #about #slider .bx-wrapper .bx-pager.bx-default-pager {
+      padding-top: 15px;
+      position: inherit;
+      bottom: inherit; }
+      #about #slider .bx-wrapper .bx-pager.bx-default-pager a {
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        background: #4d4d4d; }
+        #about #slider .bx-wrapper .bx-pager.bx-default-pager a:hover, #about #slider .bx-wrapper .bx-pager.bx-default-pager a.active {
+          background: #059ed1; }
 
 #product {
   margin-bottom: 90px; }
@@ -695,11 +707,11 @@ img {
     font-family: "SegoeUI" , sans-serif;
     font-weight: normal; }
   #comment .text-holder {
-    margin-bottom: 1px;
     padding: 0 50px; }
     #comment .text-holder p {
       line-height: 2em;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
   #comment .content {
     color: #fff; }
     #comment .content .link_comment {
@@ -1973,4 +1985,9 @@ footer {
   #main_slider .slider_main li .text-holder {
     padding-top: 50px; }
   #main_slider .slider_main li .text-holder .text {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  #comment .content .bx-wrapper .bx-viewport li .info_personal .img-holder {
+    width: 55px;
+    height: 55px; }
+  #comment .content .bx-wrapper .bx-viewport li .info_personal .text-holder h4, #comment .content .bx-wrapper .bx-viewport li .info_personal .text-holder .data {
+    font-size: 14px; } }

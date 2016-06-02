@@ -618,8 +618,23 @@ img
 
   #slider
     margin-bottom: 40px
-    .bx-controls
+    .bx-controls-direction
       display: none
+    .bx-wrapper
+      .bx-pager.bx-default-pager
+        padding-top: 15px
+        position: inherit
+        bottom: inherit
+
+        a
+          font-size: 0
+          width: 15px
+          height: 15px
+          border-radius: 15px
+          //margin: 0 7px
+          background: #4d4d4d
+          &:hover, &.active
+            background: #059ed1
 
 
 #product
@@ -891,11 +906,13 @@ img
     font-weight: normal
 
   .text-holder
-    margin-bottom: 1px
+
     padding: 0 50px
+
     p
       line-height: 2em
       text-align: center
+      margin-bottom: 30px
 
   .content
     color: #fff
@@ -2484,3 +2501,12 @@ footer
     padding-top: 50px
   #main_slider .slider_main li .text-holder .text
     margin-bottom: 30px
+
+  #comment .content .bx-wrapper .bx-viewport li .info_personal
+    .img-holder
+      width: 55px
+      height: 55px
+
+    .text-holder
+      h4, .data
+        font-size: 14px
