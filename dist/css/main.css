@@ -1355,6 +1355,9 @@ footer {
     .portfolio .info_portfolio .text_holder p {
       line-height: 2em; }
 
+.portfolio .portfolio_list .item .img-holder {
+  width: 60%; }
+
 .portfolio .portfolio_list .item:nth-child(2n+1) {
   padding: 100px 0; }
   .portfolio .portfolio_list .item:nth-child(2n+1) .img-holder {
